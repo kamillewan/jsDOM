@@ -46,7 +46,8 @@ console.log(alertBtn);
 
 var x = alertBtn.length;
 
-for (a = 1; a <= x; a++) { 
-  var b = alertBtn.innerText;
+
+for (a = 0; a < x; a++) { 
+  var b = alertBtn[a].innerText;  //WAŻNE! - do poszczególnych elementów należy odwołać się przez indeks w tablicy []
   alert ('Nazwa przycisku: '+ b);
 }
